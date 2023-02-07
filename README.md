@@ -27,7 +27,9 @@ In a new file
 - [ ] Replace with `<RichText.Content value=$1/>`
 - [ ] replace `className=`with `class=`
 
-## 4. Links
+## 4. Buttons
+
+Buttons can have different structures other than Gutenberg's button block.
 
 Add this to your “href”
 ```{attributes.myRichText.match('(.*?)href\=\"(.*?)\"(.*?)') ? attributes.myRichText.match('(.*?)href\=\"(.*?)\"(.*?)')[2] : attributes.myRichText}```
@@ -40,8 +42,8 @@ With
 
 ## 5. Images
 
-- [ ] Import the media upload block
-- [ ] Find `<img src=“(.*?)”(.*?)>`
+- [ ] Import the media upload block component.
+- [ ] Find `<img src=“(.*?)” class=(.*?)>`
 - [ ] Replace with:
 
 ```
@@ -56,5 +58,5 @@ imageUrl: {
 
 Where
 
-`ImageUrl`is the image attribute.
+`ImageUrl`is a unique image attribute.
 
