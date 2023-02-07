@@ -29,15 +29,12 @@ In a new file
 
 ## 4. Buttons
 
-Buttons can have different structures other than Gutenberg's button block.
+Buttons can have different structures other than Gutenberg's button block. Wherever RichText won't work:
 
 Add this to your “href”
 ```{attributes.myRichText.match('(.*?)href\=\"(.*?)\"(.*?)') ? attributes.myRichText.match('(.*?)href\=\"(.*?)\"(.*?)')[2] : attributes.myRichText}```
 
-Replace
-`{attributes.myRichText}`
-
-With
+Replace the labels with
 ```{attributes.myRichText.match('(?<=<.+.>)(.*?)(?=<.*\/.+.?>)') ? attributes.myRichText.match('(?<=<.+.>)(.*?)(?=<.*\/.+.?>)')[0] : attributes.myRichText} ```
 
 ## 5. Images
