@@ -24,7 +24,7 @@ In a new file
 - [ ] Find `default=\{"(.*?)"\} onChange=\{\(newtext\) => setAttributes\(\{ (.*?): newtext \}\)\}`
 - [ ] replace with nothing
 - [ ] Find `<RichText value=(.*?)/>`
-- [ ] Replace with `$1`
+- [ ] Replace with `<RichText.Content value=$1/>`
 - [ ] replace `className=`with `class=`
 
 ## 4. Links
