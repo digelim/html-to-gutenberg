@@ -17,10 +17,10 @@
 - [ ] Select all (CMD Shift + L)
 - [ ] Paste in a draft file
 - [ ] Find `\{attributes\.(.*?)\} default=\{"(.*?)"\}`
-- [ ] replace with `"$1": {type: 'string', default: `$2`},`
+- [ ] replace with `"$1": {type: 'string', default: "$2"},`
 
 ## 3. Save
-In a new file
+In a new file copy
 - [ ] Find `default=\{"(.*?)"\} onChange=\{\(newtext\) => setAttributes\(\{ (.*?): newtext \}\)\}`
 - [ ] replace with nothing
 - [ ] Find `<RichText value=(.*?)/>`
